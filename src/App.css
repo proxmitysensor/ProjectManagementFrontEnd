@@ -1,38 +1,60 @@
+footer {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.data-area-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly
 }
 
-.App-link {
-  color: #61dafb;
+.navbarButton {
+  color: #fff !important;
+  padding: .5rem 1rem !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbarStyle {
+  padding: .5rem 1rem !important;
 }
+
+.table-responsive {
+  max-height: 39rem !important;
+}
+
+.tableColumn {
+  word-break: break-all
+}
+
+.todo-form {
+  width: 60%;
+}
+
+.todo-list {
+  width: 60%;
+}
+
+.todo-label {
+  font-size: large;
+  margin-right: 22%;
+  margin-left: 3%;
+}
+
+.todo-view-btn {
+  float: right;
+}
+
+.iconText {
+  margin: 0 .5rem;
+}
+
+.profileButton {
+  margin: .5rem .5rem;
+}
+
