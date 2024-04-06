@@ -1,4 +1,7 @@
-import {useState, useCallback} from 'react';
+import {
+    useState,
+    useCallback,
+} from 'react';
 
 import { InteractionType } from '@azure/msal-browser';
 import { useMsal, useMsalAuthentication } from "@azure/msal-react";

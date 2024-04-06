@@ -10,7 +10,7 @@ import {IdTokenData} from "../components/DataDisplay";
  * ID token Claims: https://docs.microsoft.com/en-us/azure/active-directory/develop/id-tokens#claims-in-an-id-token
  * Optional Claims:  https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#v10-and-v20-optional-claims-set
  */
-export const Home = () => {
+export const Home = (props) => {
     
     const { instance } = useMsal();    
     const activeAccount = instance.getActiveAccount();
@@ -21,6 +21,9 @@ export const Home = () => {
                 {
                     activeAccount ?
                         <Container>
+                            <h2 id="interactionStatus">
+                                <span>Hi: </span><center>{props.status}</center>
+                            </h2>
                             <h3>ID Token WORKING</h3>
                             <IdTokenData idTokenClaims={activeAccount.idTokenClaims} />
                         </Container>
